@@ -20,19 +20,18 @@ export default function HeroSection() {
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-white">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-							I craft end-to-end solutions with 8+ years of experience building scalable applications and leading development teams.
+							I build scalable backend systems, real-time apps, and API-driven platforms with a focus on performance and clean architecture.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-							Previously Senior Full Stack Developer at <span className="text-blue-400">Stripe</span> and Tech Lead at{' '}
-							<span className="text-purple-400">Vercel</span>
+							Currently building SaaS tools and internal systems at <span className="text-blue-400">Hashmi Surma</span> & <span className="text-purple-400">Daffy BMC</span>
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">TypeScript</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">React & Next.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Node.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Python</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">AWS</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Django</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">Python</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Firebase</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">React</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">PostgreSQL</span>
 					</div>
 				</motion.div>
 
@@ -48,78 +47,103 @@ export default function HeroSection() {
 							{/* Frontend Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'frontend' ? 'bg-blue-500/20 border-blue-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								selectedStack === 'frontend'
+									? 'bg-blue-500/20 border-blue-500/50'
+									: 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('frontend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
 								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-400">Frontend Development</h3>
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Modern React Architectures
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Performance Optimization
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Responsive & Interactive UIs
-									</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+									React + Tailwind UI
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+									Firebase Auth & Hosting
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+									Responsive & Animated Interfaces
+								</li>
 								</ul>
+								<div className="mt-4">
+								<p className="text-sm text-gray-300 mb-1">Proficiency: 55%</p>
+								<div className="w-full h-2 bg-gray-700 rounded">
+									<div className="h-full bg-blue-500 rounded" style={{ width: '55%' }} />
+								</div>
+								</div>
 							</div>
 
 							{/* Backend Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'backend' ? 'bg-purple-500/20 border-purple-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								selectedStack === 'backend'
+									? 'bg-purple-500/20 border-purple-500/50'
+									: 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('backend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
 								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-400">Backend Development</h3>
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										API Design & Development
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Database Architecture
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Real-time Systems
-									</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+									Django REST APIs
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+									Database Modeling (Postgres, MySQL, SQLite)
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+									WebSockets & Real-Time Messaging
+								</li>
 								</ul>
+								<div className="mt-4">
+								<p className="text-sm text-gray-300 mb-1">Proficiency: 90%</p>
+								<div className="w-full h-2 bg-gray-700 rounded">
+									<div className="h-full bg-purple-500 rounded" style={{ width: '90%' }} />
+								</div>
+								</div>
 							</div>
 
 							{/* DevOps Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'devops' ? 'bg-teal-500/20 border-teal-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+								selectedStack === 'devops'
+									? 'bg-teal-500/20 border-teal-500/50'
+									: 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('devops')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">DevOps & Cloud</h3>
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">DevOps & Tools</h3>
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										AWS Infrastructure
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										CI/CD Pipelines
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										Scalable Architecture
-									</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+									CI/CD with Railway & Render
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+									Vercel/Firebase Hosting
+								</li>
+								<li className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+									Monitoring & Optimization
+								</li>
 								</ul>
+								<div className="mt-4">
+								<p className="text-sm text-gray-300 mb-1">Proficiency: 70%</p>
+								<div className="w-full h-2 bg-gray-700 rounded">
+									<div className="h-full bg-teal-500 rounded" style={{ width: '70%' }} />
+								</div>
+								</div>
 							</div>
-						</div>
+							</div>
+
 					</motion.div>
 				</div>
 			</div>
